@@ -136,8 +136,10 @@ public class dbContact extends SQLiteOpenHelper {
 
 
 //Delete a contact
-    public void contactDelete(Contact contact){
+    public void contactDelete(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
 
+        db.delete(TABLE_CONTACTS, "id=?", new String[]{String.valueOf(id)});
     }
 
 }

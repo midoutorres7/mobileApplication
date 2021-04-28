@@ -39,9 +39,8 @@ public class add_contact extends AppCompatActivity {
 
                 //Toast
                 Toast.makeText(add_contact.this , "a new contact added successfully" , Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
-
-
     }
 }

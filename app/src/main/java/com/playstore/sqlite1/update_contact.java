@@ -89,6 +89,8 @@ public class update_contact extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             //delete Contact
+                            db.contactDelete(id);
+                            finish();
                         }
                     })
 
