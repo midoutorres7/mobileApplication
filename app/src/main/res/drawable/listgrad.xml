@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:endColor="#4e54c8"
+                android:startColor="#8f94fb"
+                android:type="sweep" />
+        </shape>
+    </item>
+</selector>
+
+
+<!--
+shapelist:
+  linear
+  radial
+  sweep
+
+  colors:
+  #ffafbd → #ffc3a0
+  blue:  #a1c4fd  →  #c2e9fb
+  grreen:  #d4fc79 → #96e6a1
+  pimk:  #fdcbf1 → #e6dee9
+  red+pink:  #ffecd2 → #fcb69f
+-->

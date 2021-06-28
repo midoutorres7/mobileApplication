@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15pt"
         android:layout_marginLeft="15pt"
-        android:layout_marginTop="100pt"
+        android:layout_marginTop="40pt"
         android:layout_weight="0"
         android:orientation="vertical">
 
@@ -23,8 +23,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="Enter the Contact Name"
-            android:inputType="textPersonName"
-             />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/updatePhone"
@@ -34,17 +33,92 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="Enter the Phone Number"
-            android:inputType="textPersonName"
-            />
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:id="@+id/sexGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioHomme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Homme" />
+
+            <RadioButton
+                android:id="@+id/radioFemme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Femme" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/updateAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/updatePoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="Enter the Phone Number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/updatCreatine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="Enter the Phone Number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/updateBili"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="Enter the Phone Number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/updateTgo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="Enter the Phone Number"
+            android:inputType="numberDecimal" />
 
         <Button
             android:id="@+id/btnUpdate"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10pt"
+            android:layout_width="150pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_bg"
             android:text="Update Contact"
-            android:textColor="#fff"
-            android:textStyle="bold" />
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
     </LinearLayout>
 
 </LinearLayout>

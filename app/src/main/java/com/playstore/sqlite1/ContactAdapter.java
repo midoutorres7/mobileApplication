@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +23,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         this.resource = resource;
     }
 
+
     //Override of getView methode
     @NonNull
     @Override
@@ -30,6 +32,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         convertView = LayoutInflater.from(context).inflate(resource, parent, false);
 
         //get text views
+        ImageView img = (ImageView) convertView.findViewById((R.id.sampleiconimageID));
         TextView name = (TextView) convertView.findViewById(R.id.tvName);
         TextView phone = (TextView) convertView.findViewById(R.id.tvPhone);
 
@@ -37,6 +40,11 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         Contact contact = getItem(position);
 
         //ajuster les information dans les champs
+        if(contact.getSex().equals("Homme")){
+            img.setImageResource(R.drawable.boy);
+        }else{
+            img.setImageResource(R.drawable.girl);
+        }
         name.setText(contact.getName());
         phone.setText(String.valueOf(contact.getPhone()));
 

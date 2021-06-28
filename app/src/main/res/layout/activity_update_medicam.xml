@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_medicam"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15pt"
+        android:layout_marginLeft="15pt"
+        android:layout_marginTop="30pt"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/updateDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateClrMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateClrMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateBiliMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateBiliMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateTgoMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/updateTgoMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            android:id="@+id/updateMed"
+            android:text="Update Medicam"
+            android:layout_width="150pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_bg"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</LinearLayout>
